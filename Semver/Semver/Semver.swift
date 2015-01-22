@@ -91,8 +91,8 @@ public class Semver {
         self.versionStr = version
     }
     
-    func diff(version1: String, version2: String) -> Bool{
-        return false
+    func diff(String, String) -> Int{
+        return 0
     }
     
     public class func valid(version: String) -> Bool{
@@ -100,7 +100,7 @@ public class Semver {
     }
     
     public func valid() -> Bool{
-        if let match = self.versionStr.rangeOfString(SemVerRegexp, options: .RegularExpressionSearch){
+        if let match = versionStr.rangeOfString(SemVerRegexp, options: .RegularExpressionSearch){
             return true
         }
         return false
@@ -116,19 +116,23 @@ public class Semver {
     }
     
     public func gt(version1: String, version2: String) -> Bool{
-        return false
+        return diff(version1, version2) > 0
     }
     
     public func lt(version1: String, version2: String) -> Bool{
-        return false
+        return diff(version1, version2) < 0
     }
     
     public func gte(version1: String, version2: String) -> Bool{
-        return false
+        return diff(version1, version2) >= 0
     }
     
     public func lte(version1: String, version2: String) -> Bool{
-        return false
+        return diff(version1, version2) <= 0
+    }
+    
+    public func eq(version1: String, version2: String) -> Bool{
+        return diff(version1, version2) == 0
     }
     
     func parse(version: String) -> Semver{
