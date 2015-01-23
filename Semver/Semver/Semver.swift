@@ -76,19 +76,37 @@ public class Semver {
     
     let SemVerRegexp = "\\A(\\d+\\.\\d+\\.\\d+)(-([0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*))?(\\+([0-9A-Za-z-]+(\\.[0-9A-Za-z-]+)*))?\\Z"
     
-    let major: String = ""
-    let minor: String = ""
-    let patch: String = ""
-    let pre: String = ""
-    let build: String = ""
+    var major: String = ""
+    var minor: String = ""
+    var patch: String = ""
+    var pre: String = ""
+    var build: String = ""
     var versionStr: String = ""
     
+    let BUILD_DELIMITER: String = "+"
+    let PRERELEASE_DELIMITER: String = "-";
+    let VERSION_DELIMITER: String  = ".";
+    let IGNORE_PREFIX: String = "v";
+    let IGNORE_EQ: String= "=";
+    
+    
     required public init(){
+        
+    }
+    
+    public class func version() -> String{
+        return "0.0.1"
     }
     
     convenience init(version: String!){
         self.init()
         self.versionStr = version
+        if valid(){
+            var v = versionStr.componentsSeparatedByString(VERSION_DELIMITER) as Array
+            self.major = v[0]
+            self.minor = v[1]
+            self.patch = v[2]
+        }
     }
     
     func diff(String, String) -> Int{
@@ -133,10 +151,6 @@ public class Semver {
     
     public func eq(version1: String, version2: String) -> Bool{
         return diff(version1, version2) == 0
-    }
-    
-    func parse(version: String) -> Semver{
-        return Semver(version: version)
     }
     
 }
