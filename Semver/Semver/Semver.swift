@@ -84,12 +84,11 @@ public class Semver {
     var versionStr: String = ""
     
     let BUILD_DELIMITER: String = "+"
-    let PRERELEASE_DELIMITER: String = "-";
-    let VERSION_DELIMITER: String  = ".";
-    let IGNORE_PREFIX: String = "v";
-    let IGNORE_EQ: String =  "=";
-    
-    
+    let PRERELEASE_DELIMITER: String = "-"
+    let VERSION_DELIMITER: String  = "."
+    let IGNORE_PREFIX: String = "v"
+    let IGNORE_EQ: String = "="
+
     required public init(){
         
     }
@@ -152,5 +151,4 @@ public class Semver {
     public class func eq(version1: String, version2: String) -> Bool{
         return diff(version1, version2) == 0
     }
-    
 }
