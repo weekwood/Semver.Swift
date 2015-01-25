@@ -88,7 +88,7 @@ public class Semver {
     let VERSION_DELIMITER: String  = "."
     let IGNORE_PREFIX: String = "v"
     let IGNORE_EQ: String = "="
-
+    
     required public init(){
         
     }
@@ -108,7 +108,20 @@ public class Semver {
         }
     }
     
-    class func diff(String, String) -> Int{
+    func diff(version2: String) -> Int{
+        var version = Semver(version: version2)
+        if (major.compare(version.major) != .OrderedSame){
+            return major.compare(version.major).rawValue
+        }
+        
+        if (minor.compare(version.minor) != .OrderedSame){
+            return minor.compare(version.minor).rawValue
+        }
+        
+        if (patch.compare(version.patch) != .OrderedSame){
+            return patch.compare(version.patch).rawValue
+        }
+        
         return 0
     }
     
@@ -133,22 +146,22 @@ public class Semver {
     }
     
     public class func gt(version1: String, version2: String) -> Bool{
-        return diff(version1, version2) > 0
+        return Semver(version: version1).diff(version2) > 0
     }
     
     public class func lt(version1: String, version2: String) -> Bool{
-        return diff(version1, version2) < 0
+        return Semver(version: version1).diff(version2) < 0
     }
     
     public class func gte(version1: String, version2: String) -> Bool{
-        return diff(version1, version2) >= 0
+        return Semver(version: version1).diff(version2) >= 0
     }
     
     public class func lte(version1: String, version2: String) -> Bool{
-        return diff(version1, version2) <= 0
+        return Semver(version: version1).diff(version2) <= 0
     }
     
     public class func eq(version1: String, version2: String) -> Bool{
-        return diff(version1, version2) == 0
+        return Semver(version: version1).diff(version2) == 0
     }
 }
