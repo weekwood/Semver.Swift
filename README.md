@@ -10,7 +10,9 @@ Semver.valid('a.b.c') // false
 Semver.clean('  =v1.2.3   ') // '1.2.3'
 Semver.gt('1.2.3', '9.8.7') // false
 Semver.lt('1.2.3', '9.8.7') // true
-
+Semver.gte('1.2.3', '9.8.7') // false
+Semver.lte('1.2.3', '9.8.7') // true
+Semver.eq('1.2.3', '9.8.7') // false
 ```
 
 ### Author
