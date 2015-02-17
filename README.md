@@ -1,5 +1,7 @@
 ## Swift Semantic Versioning Library
 
+[![Build Status](https://travis-ci.org/weekwood/Semver.Swift.svg)](https://travis-ci.org/weekwood/Semver.Swift)
+
 Semver.swift is described by the v2.0.0 specification found at http://semver.org/.
 
 ### Usage
