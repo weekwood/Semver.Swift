@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Semver
 //
-//  Created by di wu on 1/20/15.
+//  Created by di wu on 2/17/15.
 //  Copyright (c) 2015 di wu. All rights reserved.
 //
 

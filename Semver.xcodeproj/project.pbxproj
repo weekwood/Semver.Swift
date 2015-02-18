@@ -7,48 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		504E10B11A6E3C7200F461FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E10B01A6E3C7200F461FF /* AppDelegate.swift */; };
-		504E10B31A6E3C7200F461FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E10B21A6E3C7200F461FF /* ViewController.swift */; };
-		504E10B61A6E3C7200F461FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504E10B41A6E3C7200F461FF /* Main.storyboard */; };
-		504E10B81A6E3C7200F461FF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504E10B71A6E3C7200F461FF /* Images.xcassets */; };
-		504E10BB1A6E3C7200F461FF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 504E10B91A6E3C7200F461FF /* LaunchScreen.xib */; };
-		504E10C71A6E3C7200F461FF /* SemverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E10C61A6E3C7200F461FF /* SemverTests.swift */; };
-		504E10D11A6E3C8200F461FF /* Semver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504E10D01A6E3C8200F461FF /* Semver.swift */; };
+		507445521A937CAD005519D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507445511A937CAD005519D7 /* AppDelegate.swift */; };
+		507445591A937CAD005519D7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 507445581A937CAD005519D7 /* Images.xcassets */; };
+		5074455C1A937CAD005519D7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5074455A1A937CAD005519D7 /* LaunchScreen.xib */; };
+		507445681A937CAD005519D7 /* SemverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507445671A937CAD005519D7 /* SemverTests.swift */; };
+		507445721A937CDD005519D7 /* Semver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507445711A937CDD005519D7 /* Semver.swift */; };
+		507445731A937CDD005519D7 /* Semver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507445711A937CDD005519D7 /* Semver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		504E10C11A6E3C7200F461FF /* PBXContainerItemProxy */ = {
+		507445621A937CAD005519D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 504E10A31A6E3C7200F461FF /* Project object */;
+			containerPortal = 507445441A937CAD005519D7 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 504E10AA1A6E3C7200F461FF;
+			remoteGlobalIDString = 5074454B1A937CAD005519D7;
 			remoteInfo = Semver;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		504E10AB1A6E3C7200F461FF /* Semver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semver.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		504E10AF1A6E3C7200F461FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		504E10B01A6E3C7200F461FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		504E10B21A6E3C7200F461FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		504E10B51A6E3C7200F461FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		504E10B71A6E3C7200F461FF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		504E10BA1A6E3C7200F461FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		504E10C01A6E3C7200F461FF /* SemverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SemverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		504E10C51A6E3C7200F461FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		504E10C61A6E3C7200F461FF /* SemverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemverTests.swift; sourceTree = "<group>"; };
-		504E10D01A6E3C8200F461FF /* Semver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semver.swift; sourceTree = "<group>"; };
+		5074454C1A937CAD005519D7 /* Semver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Semver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		507445501A937CAD005519D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507445511A937CAD005519D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		507445581A937CAD005519D7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5074455B1A937CAD005519D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		507445611A937CAD005519D7 /* SemverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SemverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		507445661A937CAD005519D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		507445671A937CAD005519D7 /* SemverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemverTests.swift; sourceTree = "<group>"; };
+		507445711A937CDD005519D7 /* Semver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Semver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		504E10A81A6E3C7200F461FF /* Frameworks */ = {
+		507445491A937CAD005519D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		504E10BD1A6E3C7200F461FF /* Frameworks */ = {
+		5074455E1A937CAD005519D7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,59 +55,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		504E10A21A6E3C7200F461FF = {
+		507445431A937CAD005519D7 = {
 			isa = PBXGroup;
 			children = (
-				504E10AD1A6E3C7200F461FF /* Semver */,
-				504E10C31A6E3C7200F461FF /* SemverTests */,
-				504E10AC1A6E3C7200F461FF /* Products */,
+				5074454E1A937CAD005519D7 /* Semver */,
+				507445641A937CAD005519D7 /* SemverTests */,
+				5074454D1A937CAD005519D7 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		504E10AC1A6E3C7200F461FF /* Products */ = {
+		5074454D1A937CAD005519D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				504E10AB1A6E3C7200F461FF /* Semver.app */,
-				504E10C01A6E3C7200F461FF /* SemverTests.xctest */,
+				5074454C1A937CAD005519D7 /* Semver.app */,
+				507445611A937CAD005519D7 /* SemverTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		504E10AD1A6E3C7200F461FF /* Semver */ = {
+		5074454E1A937CAD005519D7 /* Semver */ = {
 			isa = PBXGroup;
 			children = (
-				504E10B01A6E3C7200F461FF /* AppDelegate.swift */,
-				504E10B21A6E3C7200F461FF /* ViewController.swift */,
-				504E10B41A6E3C7200F461FF /* Main.storyboard */,
-				504E10B71A6E3C7200F461FF /* Images.xcassets */,
-				504E10B91A6E3C7200F461FF /* LaunchScreen.xib */,
-				504E10AE1A6E3C7200F461FF /* Supporting Files */,
-				504E10D01A6E3C8200F461FF /* Semver.swift */,
+				507445711A937CDD005519D7 /* Semver.swift */,
+				507445511A937CAD005519D7 /* AppDelegate.swift */,
+				507445581A937CAD005519D7 /* Images.xcassets */,
+				5074455A1A937CAD005519D7 /* LaunchScreen.xib */,
+				5074454F1A937CAD005519D7 /* Supporting Files */,
 			);
 			path = Semver;
 			sourceTree = "<group>";
 		};
-		504E10AE1A6E3C7200F461FF /* Supporting Files */ = {
+		5074454F1A937CAD005519D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				504E10AF1A6E3C7200F461FF /* Info.plist */,
+				507445501A937CAD005519D7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		504E10C31A6E3C7200F461FF /* SemverTests */ = {
+		507445641A937CAD005519D7 /* SemverTests */ = {
 			isa = PBXGroup;
 			children = (
-				504E10C61A6E3C7200F461FF /* SemverTests.swift */,
-				504E10C41A6E3C7200F461FF /* Supporting Files */,
+				507445671A937CAD005519D7 /* SemverTests.swift */,
+				507445651A937CAD005519D7 /* Supporting Files */,
 			);
 			path = SemverTests;
 			sourceTree = "<group>";
 		};
-		504E10C41A6E3C7200F461FF /* Supporting Files */ = {
+		507445651A937CAD005519D7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				504E10C51A6E3C7200F461FF /* Info.plist */,
+				507445661A937CAD005519D7 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -118,13 +113,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		504E10AA1A6E3C7200F461FF /* Semver */ = {
+		5074454B1A937CAD005519D7 /* Semver */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 504E10CA1A6E3C7200F461FF /* Build configuration list for PBXNativeTarget "Semver" */;
+			buildConfigurationList = 5074456B1A937CAD005519D7 /* Build configuration list for PBXNativeTarget "Semver" */;
 			buildPhases = (
-				504E10A71A6E3C7200F461FF /* Sources */,
-				504E10A81A6E3C7200F461FF /* Frameworks */,
-				504E10A91A6E3C7200F461FF /* Resources */,
+				507445481A937CAD005519D7 /* Sources */,
+				507445491A937CAD005519D7 /* Frameworks */,
+				5074454A1A937CAD005519D7 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -132,46 +127,46 @@
 			);
 			name = Semver;
 			productName = Semver;
-			productReference = 504E10AB1A6E3C7200F461FF /* Semver.app */;
+			productReference = 5074454C1A937CAD005519D7 /* Semver.app */;
 			productType = "com.apple.product-type.application";
 		};
-		504E10BF1A6E3C7200F461FF /* SemverTests */ = {
+		507445601A937CAD005519D7 /* SemverTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 504E10CD1A6E3C7200F461FF /* Build configuration list for PBXNativeTarget "SemverTests" */;
+			buildConfigurationList = 5074456E1A937CAD005519D7 /* Build configuration list for PBXNativeTarget "SemverTests" */;
 			buildPhases = (
-				504E10BC1A6E3C7200F461FF /* Sources */,
-				504E10BD1A6E3C7200F461FF /* Frameworks */,
-				504E10BE1A6E3C7200F461FF /* Resources */,
+				5074455D1A937CAD005519D7 /* Sources */,
+				5074455E1A937CAD005519D7 /* Frameworks */,
+				5074455F1A937CAD005519D7 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				504E10C21A6E3C7200F461FF /* PBXTargetDependency */,
+				507445631A937CAD005519D7 /* PBXTargetDependency */,
 			);
 			name = SemverTests;
 			productName = SemverTests;
-			productReference = 504E10C01A6E3C7200F461FF /* SemverTests.xctest */;
+			productReference = 507445611A937CAD005519D7 /* SemverTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		504E10A31A6E3C7200F461FF /* Project object */ = {
+		507445441A937CAD005519D7 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "di wu";
 				TargetAttributes = {
-					504E10AA1A6E3C7200F461FF = {
+					5074454B1A937CAD005519D7 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					504E10BF1A6E3C7200F461FF = {
+					507445601A937CAD005519D7 = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 504E10AA1A6E3C7200F461FF;
+						TestTargetID = 5074454B1A937CAD005519D7;
 					};
 				};
 			};
-			buildConfigurationList = 504E10A61A6E3C7200F461FF /* Build configuration list for PBXProject "Semver" */;
+			buildConfigurationList = 507445471A937CAD005519D7 /* Build configuration list for PBXProject "Semver" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,29 +174,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 504E10A21A6E3C7200F461FF;
-			productRefGroup = 504E10AC1A6E3C7200F461FF /* Products */;
+			mainGroup = 507445431A937CAD005519D7;
+			productRefGroup = 5074454D1A937CAD005519D7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				504E10AA1A6E3C7200F461FF /* Semver */,
-				504E10BF1A6E3C7200F461FF /* SemverTests */,
+				5074454B1A937CAD005519D7 /* Semver */,
+				507445601A937CAD005519D7 /* SemverTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		504E10A91A6E3C7200F461FF /* Resources */ = {
+		5074454A1A937CAD005519D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504E10B61A6E3C7200F461FF /* Main.storyboard in Resources */,
-				504E10BB1A6E3C7200F461FF /* LaunchScreen.xib in Resources */,
-				504E10B81A6E3C7200F461FF /* Images.xcassets in Resources */,
+				5074455C1A937CAD005519D7 /* LaunchScreen.xib in Resources */,
+				507445591A937CAD005519D7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		504E10BE1A6E3C7200F461FF /* Resources */ = {
+		5074455F1A937CAD005519D7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -211,47 +205,39 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		504E10A71A6E3C7200F461FF /* Sources */ = {
+		507445481A937CAD005519D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504E10D11A6E3C8200F461FF /* Semver.swift in Sources */,
-				504E10B31A6E3C7200F461FF /* ViewController.swift in Sources */,
-				504E10B11A6E3C7200F461FF /* AppDelegate.swift in Sources */,
+				507445721A937CDD005519D7 /* Semver.swift in Sources */,
+				507445521A937CAD005519D7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		504E10BC1A6E3C7200F461FF /* Sources */ = {
+		5074455D1A937CAD005519D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504E10C71A6E3C7200F461FF /* SemverTests.swift in Sources */,
+				507445681A937CAD005519D7 /* SemverTests.swift in Sources */,
+				507445731A937CDD005519D7 /* Semver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		504E10C21A6E3C7200F461FF /* PBXTargetDependency */ = {
+		507445631A937CAD005519D7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 504E10AA1A6E3C7200F461FF /* Semver */;
-			targetProxy = 504E10C11A6E3C7200F461FF /* PBXContainerItemProxy */;
+			target = 5074454B1A937CAD005519D7 /* Semver */;
+			targetProxy = 507445621A937CAD005519D7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		504E10B41A6E3C7200F461FF /* Main.storyboard */ = {
+		5074455A1A937CAD005519D7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				504E10B51A6E3C7200F461FF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		504E10B91A6E3C7200F461FF /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				504E10BA1A6E3C7200F461FF /* Base */,
+				5074455B1A937CAD005519D7 /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -259,7 +245,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		504E10C81A6E3C7200F461FF /* Debug */ = {
+		507445691A937CAD005519D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		504E10C91A6E3C7200F461FF /* Release */ = {
+		5074456A1A937CAD005519D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -336,7 +322,7 @@
 			};
 			name = Release;
 		};
-		504E10CB1A6E3C7200F461FF /* Debug */ = {
+		5074456C1A937CAD005519D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -346,7 +332,7 @@
 			};
 			name = Debug;
 		};
-		504E10CC1A6E3C7200F461FF /* Release */ = {
+		5074456D1A937CAD005519D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -356,7 +342,7 @@
 			};
 			name = Release;
 		};
-		504E10CE1A6E3C7200F461FF /* Debug */ = {
+		5074456F1A937CAD005519D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,7 +361,7 @@
 			};
 			name = Debug;
 		};
-		504E10CF1A6E3C7200F461FF /* Release */ = {
+		507445701A937CAD005519D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -393,32 +379,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		504E10A61A6E3C7200F461FF /* Build configuration list for PBXProject "Semver" */ = {
+		507445471A937CAD005519D7 /* Build configuration list for PBXProject "Semver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				504E10C81A6E3C7200F461FF /* Debug */,
-				504E10C91A6E3C7200F461FF /* Release */,
+				507445691A937CAD005519D7 /* Debug */,
+				5074456A1A937CAD005519D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		504E10CA1A6E3C7200F461FF /* Build configuration list for PBXNativeTarget "Semver" */ = {
+		5074456B1A937CAD005519D7 /* Build configuration list for PBXNativeTarget "Semver" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				504E10CB1A6E3C7200F461FF /* Debug */,
-				504E10CC1A6E3C7200F461FF /* Release */,
+				5074456C1A937CAD005519D7 /* Debug */,
+				5074456D1A937CAD005519D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		504E10CD1A6E3C7200F461FF /* Build configuration list for PBXNativeTarget "SemverTests" */ = {
+		5074456E1A937CAD005519D7 /* Build configuration list for PBXNativeTarget "SemverTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				504E10CE1A6E3C7200F461FF /* Debug */,
-				504E10CF1A6E3C7200F461FF /* Release */,
+				5074456F1A937CAD005519D7 /* Debug */,
+				507445701A937CAD005519D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 504E10A31A6E3C7200F461FF /* Project object */;
+	rootObject = 507445441A937CAD005519D7 /* Project object */;
 }
