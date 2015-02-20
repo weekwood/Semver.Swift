@@ -94,7 +94,7 @@ public class Semver {
     }
     
     public class func version() -> String{
-        return "0.0.1"
+        return "0.1.1"
     }
     
     convenience init(version: String!){
@@ -102,9 +102,19 @@ public class Semver {
         self.versionStr = version
         if valid(){
             var v = versionStr.componentsSeparatedByString(VERSION_DELIMITER) as Array
-            self.major = v[0]
-            self.minor = v[1]
-            self.patch = v[2]
+            major = v[0]
+            minor = v[1]
+            patch = v[2]
+            
+            var prerelease = versionStr.componentsSeparatedByString(PRERELEASE_DELIMITER) as Array
+            if (prerelease.count>1) {
+                pre = prerelease[1]
+            }
+            
+            var buildVersion = versionStr.componentsSeparatedByString(BUILD_DELIMITER) as Array
+            if (buildVersion.count>1) {
+                build = buildVersion[1]
+            }
         }
     }
     
