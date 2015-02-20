@@ -21,7 +21,9 @@ class SemverTests: XCTestCase {
     
     func testVaild() {
         XCTAssertFalse(Semver.valid("a.b.c"), "pass")
-        XCTAssertTrue(Semver.valid("1.3.4"), "pass")
+        XCTAssertTrue(Semver.valid("1.3.4-pre.1+ver.1"), "pass")
+        XCTAssertTrue(Semver.valid("1.3.4+ver.1"), "pass")
+        XCTAssertTrue(Semver.valid("1.3.4-pre.1"), "pass")
     }
 
     func testClean() {
