@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0610"
+   LastUpgradeVersion = "0620"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5074454B1A937CAD005519D7"
-               BuildableName = "Semver.app"
-               BlueprintName = "Semver"
-               ReferencedContainer = "container:Semver.xcodeproj">
+               BlueprintIdentifier = "257C9A8D1AC30903009DDD7F"
+               BuildableName = "SemverSwift.framework"
+               BlueprintName = "SemverSwift"
+               ReferencedContainer = "container:SemverSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "507445601A937CAD005519D7"
-               BuildableName = "SemverTests.xctest"
-               BlueprintName = "SemverTests"
-               ReferencedContainer = "container:Semver.xcodeproj">
+               BlueprintIdentifier = "257C9A981AC30903009DDD7F"
+               BuildableName = "SemverSwiftTests.xctest"
+               BlueprintName = "SemverSwiftTests"
+               ReferencedContainer = "container:SemverSwift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "507445601A937CAD005519D7"
-               BuildableName = "SemverTests.xctest"
-               BlueprintName = "SemverTests"
-               ReferencedContainer = "container:Semver.xcodeproj">
+               BlueprintIdentifier = "257C9A981AC30903009DDD7F"
+               BuildableName = "SemverSwiftTests.xctest"
+               BlueprintName = "SemverSwiftTests"
+               ReferencedContainer = "container:SemverSwift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5074454B1A937CAD005519D7"
-            BuildableName = "Semver.app"
-            BlueprintName = "Semver"
-            ReferencedContainer = "container:Semver.xcodeproj">
+            BlueprintIdentifier = "257C9A8D1AC30903009DDD7F"
+            BuildableName = "SemverSwift.framework"
+            BlueprintName = "SemverSwift"
+            ReferencedContainer = "container:SemverSwift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -72,15 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5074454B1A937CAD005519D7"
-            BuildableName = "Semver.app"
-            BlueprintName = "Semver"
-            ReferencedContainer = "container:Semver.xcodeproj">
+            BlueprintIdentifier = "257C9A8D1AC30903009DDD7F"
+            BuildableName = "SemverSwift.framework"
+            BlueprintName = "SemverSwift"
+            ReferencedContainer = "container:SemverSwift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -90,15 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5074454B1A937CAD005519D7"
-            BuildableName = "Semver.app"
-            BlueprintName = "Semver"
-            ReferencedContainer = "container:Semver.xcodeproj">
+            BlueprintIdentifier = "257C9A8D1AC30903009DDD7F"
+            BuildableName = "SemverSwift.framework"
+            BlueprintName = "SemverSwift"
+            ReferencedContainer = "container:SemverSwift.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

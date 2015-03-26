@@ -94,7 +94,7 @@ public class Semver {
     }
     
     public class func version() -> String{
-        return "0.1.1"
+        return "0.1.2"
     }
     
     convenience init(version: String!){
