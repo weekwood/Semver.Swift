@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253BF4E11AC4530B00292E3A /* SemverSwift.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 257C9A8E1AC30903009DDD7F /* SemverSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		257C9A941AC30903009DDD7F /* SemverSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 257C9A931AC30903009DDD7F /* SemverSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		257C9A9A1AC30903009DDD7F /* SemverSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257C9A8E1AC30903009DDD7F /* SemverSwift.framework */; };
 		257C9AA11AC30903009DDD7F /* SemverSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C9AA01AC30903009DDD7F /* SemverSwiftTests.swift */; };
 		257C9AAD1AC30CBF009DDD7F /* Semver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C9AAA1AC30916009DDD7F /* Semver.swift */; };
 		257C9AAF1AC3238D009DDD7F /* semver.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 257C9AAE1AC3238D009DDD7F /* semver.podspec */; };
-		257C9AB21AC326FF009DDD7F /* Semver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257C9AAA1AC30916009DDD7F /* Semver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +24,20 @@
 			remoteInfo = SemverSwift;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		253BF4E01AC452F400292E3A /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				253BF4E11AC4530B00292E3A /* SemverSwift.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		257C9A8E1AC30903009DDD7F /* SemverSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SemverSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +162,7 @@
 				257C9A951AC30903009DDD7F /* Sources */,
 				257C9A961AC30903009DDD7F /* Frameworks */,
 				257C9A971AC30903009DDD7F /* Resources */,
+				253BF4E01AC452F400292E3A /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -226,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				257C9AA11AC30903009DDD7F /* SemverSwiftTests.swift in Sources */,
-				257C9AB21AC326FF009DDD7F /* Semver.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

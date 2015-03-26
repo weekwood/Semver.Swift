@@ -6,4 +6,4 @@ before_install:
 - if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 
 script:
-- xctool clean test --project Semver.xcodeproj -scheme "Semver" -sdk iphonesimulator8.1 ONLY_ACTIVE_ARCH=NO
+- xctool clean test --project SemverSwift.xcodeproj -scheme "SemverSwift" -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
