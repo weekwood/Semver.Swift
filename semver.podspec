@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "semver"
-  s.version          = "0.1.2"
+  s.version          = "0.1.3"
   s.summary          = "Swift Semantic Versioning Library"
   s.homepage         = "https://github.com/weekwood/Semver.Swift.git"
   s.license          = 'MIT'

@@ -180,6 +180,7 @@
 		257C9A851AC30903009DDD7F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Semver;
 				TargetAttributes = {
