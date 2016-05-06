@@ -6,7 +6,8 @@ Pod::Spec.new do |s|
   s.license          = 'MIT'
   s.author           = { "di wu" => "di.wu@me.com" }
   s.source           = { :git => "https://github.com/weekwood/semver.swift.git", :tag => s.version.to_s }
-  s.platform     = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
+  s.osx.deployment_target = '10.10'
   s.requires_arc = true
   s.source_files = ['SemverSwift/Semver.swift']
 end
