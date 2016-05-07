@@ -181,6 +181,8 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = "";
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0620;
 				ORGANIZATIONNAME = Semver;
 				TargetAttributes = {

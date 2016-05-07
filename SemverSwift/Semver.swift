@@ -32,19 +32,23 @@ struct Regex {
     
     init(pattern: String) {
         self.pattern = pattern
-        expressionOptions = NSRegularExpressionOptions(0)
-        matchingOptions = NSMatchingOptions(0)
+        expressionOptions = NSRegularExpressionOptions.CaseInsensitive
+        matchingOptions = NSMatchingOptions.ReportProgress
         updateRegex()
     }
     
     mutating func updateRegex() {
-        regex = NSRegularExpression(pattern: pattern, options: expressionOptions, error: nil)
+        do {
+            regex = try NSRegularExpression(pattern: pattern, options: expressionOptions)
+        } catch {
+            print(error)
+        }
     }
 }
 
 extension String {
     func matchRegex(pattern: Regex) -> Bool {
-        let range: NSRange = NSMakeRange(0, count(self))
+        let range: NSRange = NSMakeRange(0, characters.count)
         if pattern.regex != nil {
             let matches: [AnyObject] = pattern.regex!.matchesInString(self, options: pattern.matchingOptions, range: range)
             return matches.count > 0
@@ -58,7 +62,7 @@ extension String {
     
     func replaceRegex(pattern: Regex, template: String) -> String {
         if self.matchRegex(pattern) {
-            let range: NSRange = NSMakeRange(0, count(self))
+            let range: NSRange = NSMakeRange(0, characters.count)
             if pattern.regex != nil {
                 return pattern.regex!.stringByReplacingMatchesInString(self, options: pattern.matchingOptions, range: range, withTemplate: template)
             }
@@ -107,19 +111,19 @@ public class Semver {
             patch = v[2]
             
             var prerelease = versionStr.componentsSeparatedByString(PRERELEASE_DELIMITER) as Array
-            if (prerelease.count>1) {
+            if (prerelease.count > 1) {
                 pre = prerelease[1]
             }
             
             var buildVersion = versionStr.componentsSeparatedByString(BUILD_DELIMITER) as Array
-            if (buildVersion.count>1) {
+            if (buildVersion.count > 1) {
                 build = buildVersion[1]
             }
         }
     }
     
     func diff(version2: String) -> Int{
-        var version = Semver(version: version2)
+        let version = Semver(version: version2)
         if (major.compare(version.major) != .OrderedSame){
             return major.compare(version.major).rawValue
         }
@@ -129,7 +133,7 @@ public class Semver {
         }
         
         if (patch.compare(version.patch) != .OrderedSame){
-            return patch.compare(version.patch).rawValue
+            return patch.compare(version.patch, options: NSStringCompareOptions.NumericSearch).rawValue
         }
         
         return 0
@@ -140,7 +144,7 @@ public class Semver {
     }
     
     public func valid() -> Bool{
-        if let match = versionStr.rangeOfString(SemVerRegexp, options: .RegularExpressionSearch){
+        if let _ = versionStr.rangeOfString(SemVerRegexp, options: .RegularExpressionSearch){
             return true
         }
         return false
