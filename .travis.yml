@@ -1,4 +1,9 @@
+language: objective-c
 osx_image: xcode8.2
+before_install:
+- export LANG=en_US.UTF-8
+- brew update
+- if brew outdated | grep -qx xctool; then brew upgrade xctool; fi
 
 script:
 - xcodebuild test -project SemverSwift.xcodeproj -scheme SemverSwift -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2'
