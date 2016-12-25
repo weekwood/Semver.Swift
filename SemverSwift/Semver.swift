@@ -98,7 +98,7 @@ open class Semver {
     }
     
     open class func version() -> String{
-        return "0.1.2"
+        return "1.0.0"
     }
     
     convenience init(version: String!){
@@ -143,7 +143,7 @@ open class Semver {
         return Semver(version: version).valid()
     }
     
-    open func valid() -> Bool{
+    func valid() -> Bool{
         if let _ = versionStr.range(of: SemVerRegexp, options: .regularExpression){
             return true
         }
@@ -154,28 +154,28 @@ open class Semver {
         return Semver(version: version).clean()
     }
     
-    open func clean() -> String{
+    func clean() -> String{
         versionStr = versionStr.trimmingCharacters(in: CharacterSet.whitespaces)
         return versionStr.replace("^[=v]+", template: "")
     }
     
-    open class func gt(_ version1: String, version2: String) -> Bool{
-        return Semver(version: version1).diff(version2) > 0
+    open class func gt(_ version1: String, _ v: String) -> Bool{
+        return Semver(version: version1).diff(v) > 0
     }
     
-    open class func lt(_ version1: String, version2: String) -> Bool{
-        return Semver(version: version1).diff(version2) < 0
+    open class func lt(_ version1: String, _ v: String) -> Bool{
+        return Semver(version: version1).diff(v) < 0
     }
     
-    open class func gte(_ version1: String, version2: String) -> Bool{
-        return Semver(version: version1).diff(version2) >= 0
+    open class func gte(_ version1: String, _ v: String) -> Bool{
+        return Semver(version: version1).diff(v) >= 0
     }
     
-    open class func lte(_ version1: String, version2: String) -> Bool{
-        return Semver(version: version1).diff(version2) <= 0
+    open class func lte(_ version1: String, _ v: String) -> Bool{
+        return Semver(version: version1).diff(v) <= 0
     }
     
-    open class func eq(_ version1: String, version2: String) -> Bool{
-        return Semver(version: version1).diff(version2) == 0
+    open class func eq(_ version1: String, _ v: String) -> Bool{
+        return Semver(version: version1).diff(v) == 0
     }
 }

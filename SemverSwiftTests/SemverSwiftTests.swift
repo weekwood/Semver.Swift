@@ -34,13 +34,13 @@ class SemverSwiftTests: XCTestCase {
     }
     
     func testLt() {
-        XCTAssertTrue(Semver.lt("1.2.3", version2: "9.8.1"), "pass")
-        XCTAssertTrue(Semver.lt("1.2.9", version2: "1.2.10"), "pass")
+        XCTAssertTrue(Semver.lt("1.2.3", "9.8.1"), "pass")
+        XCTAssertTrue(Semver.lt("1.2.9", "1.2.10"), "pass")
     }
     
     func testGt() {
-        XCTAssertFalse(Semver.gt("1.2.3", version2: "9.8.1"), "pass")
-        XCTAssertTrue(Semver.gt("1.2.10", version2: "1.2.9"), "pass")
+        XCTAssertFalse(Semver.gt("1.2.3", "9.8.1"), "pass")
+        XCTAssertTrue(Semver.gt("1.2.10", "1.2.9"), "pass")
     }
     
 }
