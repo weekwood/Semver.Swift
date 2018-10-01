@@ -1,8 +1,6 @@
 ## Swift Semantic Versioning Library
 
-[![Build Status](https://travis-ci.org/weekwood/Semver.Swift.svg)](https://travis-ci.org/weekwood/Semver.Swift)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-[![CocoaPods](https://img.shields.io/cocoapods/v/semver.svg)]()
+### Updated for Swift 4
 
 Semver.swift is described by the v2.0.0 specification found at http://semver.org/.
 
