@@ -48,7 +48,7 @@ struct Regex {
 
 extension String {
     func matchRegex(_ pattern: Regex) -> Bool {
-        let range: NSRange = NSMakeRange(0, characters.count)
+        let range: NSRange = NSMakeRange(0, count)
         if pattern.regex != nil {
             let matches: [AnyObject] = pattern.regex!.matches(in: self, options: pattern.matchingOptions, range: range)
             return matches.count > 0
@@ -62,7 +62,7 @@ extension String {
     
     func replaceRegex(_ pattern: Regex, template: String) -> String {
         if self.matchRegex(pattern) {
-            let range: NSRange = NSMakeRange(0, characters.count)
+            let range: NSRange = NSMakeRange(0, count)
             if pattern.regex != nil {
                 return pattern.regex!.stringByReplacingMatches(in: self, options: pattern.matchingOptions, range: range, withTemplate: template)
             }
@@ -125,11 +125,11 @@ open class Semver {
     func diff(_ version2: String) -> Int{
         let version = Semver(version: version2)
         if (major.compare(version.major) != .orderedSame){
-            return major.compare(version.major).rawValue
+            return major.compare(version.major, options: NSString.CompareOptions.numeric).rawValue
         }
         
         if (minor.compare(version.minor) != .orderedSame){
-            return minor.compare(version.minor).rawValue
+            return minor.compare(version.minor, options: NSString.CompareOptions.numeric).rawValue
         }
         
         if (patch.compare(version.patch) != .orderedSame){
